@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+unset CDPATH
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd -P)"
+
+export HOME=$SCRIPT_DIR
+export RELEASE_READ_ONLY=1
+
+exec "$SCRIPT_DIR/bin/<%= release_name %>" foreground
