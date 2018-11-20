@@ -55,4 +55,4 @@ For full list of available options please read release documentation:
 
     # mix help release
 
-See [Elixir example](https://github.com/alertlogic/microservice_http_endpoint_elixir) for details.
+See [Elixir example](https://github.com/alertlogic/erlambda_elixir_example) for details.
