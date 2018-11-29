@@ -10,7 +10,7 @@ dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:mix_erllambda, git: "git@github.com:alertlogic/mix_erllambda.git"}
+    {:mix_erllambda, git: "https://github.com/alertlogic/mix_erllambda.git"}
   ]
 end
 ```
