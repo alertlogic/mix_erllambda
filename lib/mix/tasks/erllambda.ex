@@ -15,7 +15,9 @@ defmodule Mix.Tasks.Erllambda.Release do
   Follow distillery release usage examples to init release for the project:
 
       # init release
-      mix release.init
+      mix distillery.init
+      mkdir config
+      echo "use Mix.Config" > config/config.exs
 
   To create package run erllambda.release with MIX_ENV set to the Mix
   environment you are targeting:
@@ -39,11 +41,11 @@ defmodule Mix.Tasks.Erllambda.Release do
 
       # mix help release
   """
-  alias Mix.Releases.{Release, Config, Assembler, Overlays, Shell, Utils, Errors}
+  alias Distillery.Releases.{Release, Config, Assembler, Overlays, Shell, Utils, Errors}
 
   def run(args) do
     # parse options
-    opts = Mix.Tasks.Release.parse_args(args)
+    opts = Mix.Tasks.Distillery.Release.parse_args(args)
     verbosity = Keyword.get(opts, :verbosity)
     Shell.configure(verbosity)
 

@@ -20,7 +20,7 @@ defmodule MixErllambda.MixProject do
 
   defp deps do
     [
-      {:distillery, "~> 2.0"},
+      {:distillery, "~> 2.1"},
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end

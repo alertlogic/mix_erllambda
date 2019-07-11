@@ -31,7 +31,10 @@ suitable for AWS lambda deployment with a provided environment.
 Follow distillery release usage examples to init release for the project:
 
     # init release
-    mix release.init
+    mix distillery.init
+
+    mkdir config
+    echo "use Mix.Config" > config/config.exs
 
 To create package run erllambda.release with MIX_ENV set to the Mix
 environment you are targeting:
