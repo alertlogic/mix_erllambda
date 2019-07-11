@@ -10,7 +10,7 @@ dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:mix_erllambda, "~> 1.0"}
+    {:mix_erllambda, "~> 1.1"}
   ]
 end
 ```
